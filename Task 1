@@ -1,0 +1,26 @@
+package Bank;
+
+public class Account {
+    int AccountNumber;
+    String AccountHolderName;
+    int InitialBalance;
+Account(){
+    System.out.println("Constructor is working");
+}
+Account(int userAccountNumber, String userAccountHolderName, int userInitialBalance){
+    this.AccountNumber=userAccountNumber;
+    this.AccountHolderName=userAccountHolderName;
+    this.InitialBalance=userInitialBalance;
+}
+void display(){
+    System.out.println("The Account Holder Name: " + AccountHolderName);
+    System.out.println("The Account Number: " + AccountNumber);
+    System.out.println("Balance: " + InitialBalance);
+}
+
+public static void main(String[] args){
+Account Zain = new Account(12,"Muhammad Zain", 400000);
+Account Arham = new Account(13,"Arham Nouman", 000);
+Arham.display();
+}
+}
