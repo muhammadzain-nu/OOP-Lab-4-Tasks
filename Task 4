@@ -1,0 +1,29 @@
+class Computer {
+    String systemID;
+    String processorType;
+    int ramSize; // in GB
+    String operatingSystem;
+
+    Computer(String systemID, String processorType, int ramSize, String operatingSystem) {
+        this.systemID = systemID;
+        this.processorType = processorType;
+        this.ramSize = ramSize;
+        this.operatingSystem = operatingSystem;
+    }
+
+    void displayDetails() {
+        System.out.println("System ID: " + systemID);
+        System.out.println("Processor: " + processorType);
+        System.out.println("RAM: " + ramSize + " GB");
+        System.out.println("Operating System: " + operatingSystem);
+        System.out.println("-------------------------");
+    }
+
+    public static void main(String[] args) {
+        Computer comp1 = new Computer("LAB001", "Intel i5", 8, "Windows 11");
+        Computer comp2 = new Computer("LAB002", "AMD Ryzen 7", 16, "Ubuntu Linux");
+
+        comp1.displayDetails();
+        comp2.displayDetails();
+    }
+}
