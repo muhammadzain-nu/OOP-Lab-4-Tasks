@@ -1,0 +1,36 @@
+class Mobile {
+    String brandName;
+    String model;
+    double price;
+
+    Mobile() {
+        brandName = "Unknown Brand";
+        model = "Unknown Model";
+        price = 0.0;
+    }
+
+  
+    Mobile(String brandName, String model, double price) {
+        this.brandName = brandName;
+        this.model = model;
+        this.price = price;
+    }
+
+    void display() {
+        System.out.println("Brand: " + brandName);
+        System.out.println("Model: " + model);
+        System.out.println("Price: $" + price);
+        System.out.println("-------------------------");
+    }
+
+    public static void main(String[] args) {
+       
+        Mobile phone1 = new Mobile();
+
+   
+        Mobile phone2 = new Mobile("Samsung", "Galaxy S24", 999.99);
+
+        phone1.display();
+        phone2.display();
+    }
+}
